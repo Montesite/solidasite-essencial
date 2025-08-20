@@ -27,8 +27,8 @@ const About = () => {
   ];
 
   return (
-    <section id="sobre" className="section-padding">
-      <div className="container-custom">
+    <section id="sobre" className="py-20 px-4">
+      <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div>
@@ -61,7 +61,7 @@ const About = () => {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
-                href="https://wa.me/556120172777" 
+                href="https://wa.me/5561920172777" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn-primary"
@@ -82,7 +82,7 @@ const About = () => {
             {values.map((value, index) => {
               const Icon = value.icon;
               return (
-                <div key={index} className={`card-elevated p-6 text-center fade-in fade-in-delay-${index % 2 + 1}`}>
+                <div key={index} className="card-elevated p-6 text-center opacity-0 animate-fade-in-up" style={{ animationDelay: `${(index % 2 + 1) * 0.2}s` }}>
                   <div className="bg-gradient-secondary p-4 rounded-2xl w-fit mx-auto mb-4">
                     <Icon className="h-6 w-6 text-white" />
                   </div>
@@ -97,19 +97,19 @@ const About = () => {
         {/* Stats Section */}
         <div className="mt-20 py-16 bg-gradient-primary rounded-3xl text-white">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div className="fade-in">
+            <div className="opacity-0 animate-fade-in-up">
               <div className="text-4xl font-bold mb-2">500+</div>
               <div className="text-white/80">Empresas Atendidas</div>
             </div>
-            <div className="fade-in fade-in-delay-1">
+            <div className="opacity-0 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
               <div className="text-4xl font-bold mb-2">10+</div>
               <div className="text-white/80">Anos de Mercado</div>
             </div>
-            <div className="fade-in fade-in-delay-2">
+            <div className="opacity-0 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
               <div className="text-4xl font-bold mb-2">98%</div>
               <div className="text-white/80">Satisfação</div>
             </div>
-            <div className="fade-in fade-in-delay-3">
+            <div className="opacity-0 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
               <div className="text-4xl font-bold mb-2">24h</div>
               <div className="text-white/80">Suporte</div>
             </div>

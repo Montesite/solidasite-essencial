@@ -5,7 +5,7 @@ import { Calculator, Phone, Mail, Instagram, MapPin } from 'lucide-react';
 const Footer = () => {
   return (
     <footer className="bg-foreground text-white">
-      <div className="container-custom py-16">
+      <div className="max-w-7xl mx-auto py-16 px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
@@ -32,7 +32,7 @@ const Footer = () => {
                 <Instagram className="h-5 w-5" />
               </a>
               <a 
-                href="https://wa.me/556120172777" 
+                href="https://wa.me/5561920172777" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-white/10 hover:bg-white/20 p-3 rounded-xl transition-colors"
@@ -105,7 +105,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/20">
-        <div className="container-custom py-6">
+        <div className="max-w-7xl mx-auto py-6 px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/60 text-sm">
               © 2024 Grupo Sólida Contabilidade. Todos os direitos reservados.

@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Calculator, Users, Phone, Mail } from 'lucide-react';
+import { Menu, X, Calculator, Phone } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,9 +23,9 @@ const Header = () => {
   };
 
   return (
-    <header className={`nav-fixed transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-md' : 'bg-white/90'}`}>
-      <div className="container-custom">
-        <div className="flex items-center justify-between py-4">
+    <header className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-md' : 'bg-white/90'}`}>
+      <div className="max-w-7xl mx-auto">
+        <div className="flex items-center justify-between py-4 px-4">
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <div className="bg-gradient-primary p-2 rounded-xl shadow-md">
@@ -72,7 +72,7 @@ const Header = () => {
               <span className="text-muted-foreground">(61) 2017-2777</span>
             </div>
             <a 
-              href="https://wa.me/556120172777" 
+              href="https://wa.me/5561920172777" 
               target="_blank" 
               rel="noopener noreferrer"
               className="btn-primary text-sm"
@@ -92,7 +92,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border">
+          <div className="md:hidden py-4 border-t border-border px-4">
             <nav className="flex flex-col space-y-4">
               <button 
                 onClick={() => scrollToSection('inicio')}
@@ -124,7 +124,7 @@ const Header = () => {
                   <span>(61) 2017-2777</span>
                 </div>
                 <a 
-                  href="https://wa.me/556120172777" 
+                  href="https://wa.me/5561920172777" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="btn-primary text-sm inline-block"

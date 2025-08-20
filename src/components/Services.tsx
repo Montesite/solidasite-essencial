@@ -43,8 +43,8 @@ const Services = () => {
   ];
 
   return (
-    <section id="servicos" className="section-padding bg-muted/30">
-      <div className="container-custom">
+    <section id="servicos" className="py-20 px-4 bg-muted/30">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <div className="inline-flex items-center bg-primary/10 text-primary rounded-full px-4 py-2 text-sm font-medium mb-6">
             <Shield className="h-4 w-4 mr-2" />
@@ -64,7 +64,7 @@ const Services = () => {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <div key={index} className={`card-service fade-in fade-in-delay-${index % 3 + 1}`}>
+              <div key={index} className="card-service opacity-0 animate-fade-in-up" style={{ animationDelay: `${(index % 3 + 1) * 0.2}s` }}>
                 <div className="mb-6">
                   <div className="bg-gradient-primary p-4 rounded-2xl w-fit mb-4 group-hover:scale-110 transition-transform duration-300">
                     <Icon className="h-8 w-8 text-white" />
@@ -84,7 +84,7 @@ const Services = () => {
 
                 <div className="mt-8">
                   <a 
-                    href="https://wa.me/556120172777" 
+                    href="https://wa.me/5561920172777" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-flex items-center text-primary hover:text-primary-dark font-medium transition-colors duration-200"
@@ -99,7 +99,7 @@ const Services = () => {
 
         <div className="text-center mt-16">
           <a 
-            href="https://wa.me/556120172777" 
+            href="https://wa.me/5561920172777" 
             target="_blank" 
             rel="noopener noreferrer"
             className="btn-primary text-lg"
