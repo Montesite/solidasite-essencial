@@ -4,15 +4,26 @@ import { ArrowRight, Shield, TrendingUp, Clock, CheckCircle } from 'lucide-react
 
 const Hero = () => {
   return (
-    <section id="inicio" className="min-h-screen flex items-center bg-gradient-to-br from-primary via-primary-light to-secondary overflow-hidden relative">
+    <section id="inicio" className="min-h-screen flex items-center relative overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url('/lovable-uploads/4d05229b-b8f2-4724-bf7f-bae867d4e62a.png')`
+        }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary-light/85 to-secondary/90"></div>
+      </div>
+
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-10 z-10">
         <div className="absolute inset-0" style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='7' cy='7' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
         }}></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 py-20 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 py-20 relative z-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="text-white">
