@@ -35,7 +35,7 @@ const About = () => {
             Sobre Nós
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-foreground">
-            Especialistas em Contabilidade
+            Grupo Sólida Contabilidade
             <span className="block text-primary">e Assessoria Empresarial</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">

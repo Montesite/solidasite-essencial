@@ -39,27 +39,27 @@ const Hero = () => {
                 </span>
               </h1>
               <p className="text-xl lg:text-2xl mb-8 text-white/90 leading-relaxed">
-                Somos especialistas em Contabilidade e Assessoria Empresarial, oferecendo soluções 
-                completas para que sua empresa cresça de forma segura e organizada.
+                Contabilidade completa e sistema financeiro moderno para sua empresa 
+                crescer de forma segura e organizada em Brasília.
               </p>
             </div>
 
             {/* Diferenciais */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 max-w-2xl mx-auto">
               <div className="flex items-center space-x-3">
-                <CheckCircle className="h-5 w-5 text-secondary-light" />
+                <CheckCircle className="h-5 w-5 text-secondary-light flex-shrink-0" />
                 <span className="text-white/90">Sistema Financeiro Moderno</span>
               </div>
               <div className="flex items-center space-x-3">
-                <CheckCircle className="h-5 w-5 text-secondary-light" />
+                <CheckCircle className="h-5 w-5 text-secondary-light flex-shrink-0" />
                 <span className="text-white/90">Conformidade Total</span>
               </div>
               <div className="flex items-center space-x-3">
-                <CheckCircle className="h-5 w-5 text-secondary-light" />
+                <CheckCircle className="h-5 w-5 text-secondary-light flex-shrink-0" />
                 <span className="text-white/90">Assessoria Estratégica</span>
               </div>
               <div className="flex items-center space-x-3">
-                <CheckCircle className="h-5 w-5 text-secondary-light" />
+                <CheckCircle className="h-5 w-5 text-secondary-light flex-shrink-0" />
                 <span className="text-white/90">Acesso Online 24h</span>
               </div>
             </div>
@@ -77,7 +77,7 @@ const Hero = () => {
               </a>
               <button 
                 onClick={() => document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' })}
-                className="inline-flex items-center border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300"
+                className="inline-flex items-center border-2 border-white/80 text-white hover:bg-white/10 hover:border-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300"
                 aria-label="Ver nossos serviços"
               >
                 Nossos Serviços
