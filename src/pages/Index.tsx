@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
+import EgestorERP from '../components/EgestorERP';
 import About from '../components/About';
 import Services from '../components/Services';
 import Contact from '../components/Contact';
@@ -66,6 +67,7 @@ const Index = () => {
         <Header />
         <main>
           <Hero />
+          <EgestorERP />
           <IntroSection />
           <About />
           <Services />
