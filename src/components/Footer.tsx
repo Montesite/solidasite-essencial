@@ -10,16 +10,16 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="bg-gradient-primary p-2 rounded-xl">
+              <div className="bg-gradient-to-r from-primary to-secondary p-2 rounded-xl">
                 <Calculator className="h-8 w-8 text-white" />
               </div>
               <div>
                 <h3 className="text-xl font-bold">Grupo Sólida</h3>
-                <p className="text-white/70">Contabilidade e Assessoria</p>
+                <p className="text-white/70">Contabilidade e Assessoria Empresarial</p>
               </div>
             </div>
             <p className="text-white/80 mb-6 max-w-md">
-              Especialistas em Contabilidade e Assessoria Empresarial, oferecendo soluções 
+              Somos especialistas em Contabilidade e Assessoria Empresarial, oferecendo soluções 
               completas para que sua empresa cresça de forma segura e organizada.
             </p>
             <div className="flex space-x-4">
@@ -28,14 +28,16 @@ const Footer = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-white/10 hover:bg-white/20 p-3 rounded-xl transition-colors"
+                aria-label="Seguir no Instagram"
               >
                 <Instagram className="h-5 w-5" />
               </a>
               <a 
-                href="https://wa.me/5561920172777" 
+                href="https://wa.me/556120172777" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-white/10 hover:bg-white/20 p-3 rounded-xl transition-colors"
+                aria-label="Falar no WhatsApp"
               >
                 <Phone className="h-5 w-5" />
               </a>
@@ -53,17 +55,17 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#servicos" className="hover:text-white transition-colors">
+                  Sistema Financeiro
+                </a>
+              </li>
+              <li>
+                <a href="#servicos" className="hover:text-white transition-colors">
                   Assessoria Fiscal
                 </a>
               </li>
               <li>
                 <a href="#servicos" className="hover:text-white transition-colors">
                   Departamento Pessoal
-                </a>
-              </li>
-              <li>
-                <a href="#servicos" className="hover:text-white transition-colors">
-                  Sistema Financeiro
                 </a>
               </li>
               <li>
@@ -88,13 +90,21 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-secondary" />
-                <a href="tel:+556120172777" className="hover:text-white transition-colors">
+                <a 
+                  href="tel:+556120172777" 
+                  className="hover:text-white transition-colors"
+                  aria-label="Ligar para Grupo Sólida"
+                >
                   (61) 2017-2777
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-secondary" />
-                <a href="mailto:gruposolidafinanceiro@gmail.com" className="hover:text-white transition-colors">
+                <a 
+                  href="mailto:gruposolidafinanceiro@gmail.com" 
+                  className="hover:text-white transition-colors"
+                  aria-label="Enviar e-mail para Grupo Sólida"
+                >
                   gruposolidafinanceiro@gmail.com
                 </a>
               </div>
@@ -108,7 +118,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto py-6 px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/60 text-sm">
-              © 2024 Grupo Sólida Contabilidade. Todos os direitos reservados.
+              © 2024 Grupo Sólida Contabilidade e Assessoria Empresarial. Todos os direitos reservados.
             </p>
             <div className="flex space-x-6 text-sm text-white/60 mt-4 md:mt-0">
               <a href="#" className="hover:text-white transition-colors">Política de Privacidade</a>

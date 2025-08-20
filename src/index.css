@@ -45,17 +45,6 @@
     --destructive-foreground: 210 40% 98%;
     
     --radius: 0.75rem;
-    
-    /* Gradientes */
-    --gradient-primary: linear-gradient(135deg, hsl(215 85% 35%) 0%, hsl(215 75% 45%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(142 70% 40%) 0%, hsl(142 60% 50%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(215 85% 35%) 0%, hsl(142 70% 40%) 100%);
-    
-    /* Sombras */
-    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   }
 
   .dark {
@@ -91,7 +80,7 @@
 
 /* Componentes Customizados */
 @layer components {
-  /* Botões */
+  /* Botões com contraste adequado */
   .btn-primary {
     @apply bg-primary hover:bg-primary-dark text-primary-foreground px-6 py-3 rounded-xl font-medium transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105;
   }
@@ -108,11 +97,6 @@
     @apply text-primary hover:bg-primary/10 px-6 py-3 rounded-xl font-medium transition-all duration-300;
   }
   
-  /* Hero Section */
-  .hero-gradient {
-    background: var(--gradient-hero);
-  }
-  
   /* Cards */
   .card-elevated {
     @apply bg-card border border-border rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105;
@@ -120,24 +104,6 @@
   
   .card-service {
     @apply bg-card p-8 rounded-2xl border border-border shadow-md hover:shadow-xl transition-all duration-500;
-  }
-  
-  /* Animações */
-  .fade-in {
-    @apply opacity-0 translate-y-8;
-    animation: fadeInUp 0.8s ease-out forwards;
-  }
-  
-  .fade-in-delay-1 {
-    animation-delay: 0.2s;
-  }
-  
-  .fade-in-delay-2 {
-    animation-delay: 0.4s;
-  }
-  
-  .fade-in-delay-3 {
-    animation-delay: 0.6s;
   }
   
   /* WhatsApp Button */
@@ -160,35 +126,10 @@
   }
 }
 
-/* Keyframes */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-.float {
-  animation: float 3s ease-in-out infinite;
-}
-
-/* Utilitários */
+/* Utilitários com contraste adequado */
 @layer utilities {
   .gradient-text {
-    background: var(--gradient-primary);
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -198,43 +139,49 @@
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  .bg-primary {
-    background-color: hsl(var(--primary));
+  /* Estados de hover com contraste adequado */
+  .hover-contrast {
+    @apply hover:bg-white/10 hover:backdrop-blur-sm;
   }
   
-  .bg-primary-light {
-    background-color: hsl(var(--primary-light));
+  .hover-contrast-dark {
+    @apply hover:bg-black/10;
   }
   
-  .bg-primary-dark {
-    background-color: hsl(var(--primary-dark));
+  /* Focus states para acessibilidade */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
   }
-  
-  .bg-secondary {
-    background-color: hsl(var(--secondary));
+}
+
+/* Animações */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
   }
-  
-  .bg-secondary-light {
-    background-color: hsl(var(--secondary-light));
+  50% {
+    transform: translateY(-10px);
   }
-  
-  .bg-secondary-dark {
-    background-color: hsl(var(--secondary-dark));
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Contraste para leitores de tela */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
-  
-  .text-primary {
-    color: hsl(var(--primary));
-  }
-  
-  .text-secondary {
-    color: hsl(var(--secondary));
-  }
-  
-  .border-primary {
-    border-color: hsl(var(--primary));
-  }
-  
-  .border-secondary {
-    border-color: hsl(var(--secondary));
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  :root {
+    --primary: 215 100% 25%;
+    --secondary: 142 100% 25%;
+    --border: 0 0% 50%;
   }
 }
