@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, Shield, TrendingUp, Clock, CheckCircle } from 'lucide-react';
+import { ArrowRight, Shield, CheckCircle } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -24,9 +24,9 @@ const Hero = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 py-20 relative z-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
-          <div className="text-white">
+        <div className="flex items-center justify-center">
+          {/* Content - Centralizado */}
+          <div className="text-white text-center max-w-4xl">
             <div className="mb-8">
               <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 text-sm font-medium mb-6">
                 <Shield className="h-4 w-4 mr-2" />
@@ -45,7 +45,7 @@ const Hero = () => {
             </div>
 
             {/* Diferenciais */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 max-w-2xl mx-auto">
               <div className="flex items-center space-x-3">
                 <CheckCircle className="h-5 w-5 text-secondary-light" />
                 <span className="text-white/90">Sistema Financeiro Moderno</span>
@@ -64,7 +64,7 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 mb-12 justify-center">
               <a 
                 href="https://wa.me/556120172777" 
                 target="_blank" 
@@ -85,7 +85,7 @@ const Hero = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-8">
+            <div className="grid grid-cols-3 gap-8 max-w-md mx-auto">
               <div className="text-center">
                 <div className="text-3xl font-bold mb-2">10+</div>
                 <div className="text-white/80 text-sm">Anos de Experiência</div>
@@ -97,50 +97,6 @@ const Hero = () => {
               <div className="text-center">
                 <div className="text-3xl font-bold mb-2">24h</div>
                 <div className="text-white/80 text-sm">Suporte Online</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Visual Elements */}
-          <div className="relative">
-            <div className="relative z-10">
-              {/* Main Card */}
-              <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">
-                <div className="flex items-center mb-6">
-                  <div className="bg-gradient-to-r from-primary to-primary-light p-3 rounded-xl mr-4">
-                    <TrendingUp className="h-6 w-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground">Sistema Financeiro</h3>
-                    <p className="text-muted-foreground text-sm">Controle total em tempo real</p>
-                  </div>
-                </div>
-                
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground">Receitas</span>
-                    <span className="font-semibold text-secondary">R$ 125.430</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground">Despesas</span>
-                    <span className="font-semibold text-foreground">R$ 87.250</span>
-                  </div>
-                  <div className="h-px bg-border"></div>
-                  <div className="flex justify-between items-center">
-                    <span className="font-semibold text-foreground">Lucro Líquido</span>
-                    <span className="font-bold text-secondary text-lg">R$ 38.180</span>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Floating Elements */}
-              <div className="absolute -top-4 -right-4 bg-secondary text-white p-4 rounded-2xl shadow-lg animate-float">
-                <Clock className="h-6 w-6" />
-              </div>
-              
-              <div className="absolute -bottom-4 -left-4 bg-white p-4 rounded-2xl shadow-lg animate-float" style={{ animationDelay: '1s' }}>
-                <div className="text-xs text-muted-foreground mb-1">Conformidade</div>
-                <div className="font-semibold text-secondary">100%</div>
               </div>
             </div>
           </div>
