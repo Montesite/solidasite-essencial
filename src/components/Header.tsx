@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Calculator, Phone } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,9 +28,11 @@ const Header = () => {
         <div className="flex items-center justify-between py-4 px-4">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="bg-gradient-primary p-2 rounded-xl shadow-md">
-              <Calculator className="h-8 w-8 text-white" />
-            </div>
+            <img 
+              src="/lovable-uploads/5aa1d763-fa32-43b0-a697-b2377df3cd1e.png" 
+              alt="Grupo Sólida Logo" 
+              className="h-12 w-auto"
+            />
             <div>
               <h1 className="text-xl font-bold text-primary">Grupo Sólida</h1>
               <p className="text-sm text-muted-foreground">Contabilidade</p>

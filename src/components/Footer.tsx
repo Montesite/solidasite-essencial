@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Calculator, Phone, Mail, Instagram, MapPin } from 'lucide-react';
+import { Phone, Mail, Instagram, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -10,9 +10,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="bg-gradient-to-r from-primary to-secondary p-2 rounded-xl">
-                <Calculator className="h-8 w-8 text-white" />
-              </div>
+              <img 
+                src="/lovable-uploads/5aa1d763-fa32-43b0-a697-b2377df3cd1e.png" 
+                alt="Grupo Sólida Logo" 
+                className="h-12 w-auto"
+              />
               <div>
                 <h3 className="text-xl font-bold">Grupo Sólida</h3>
                 <p className="text-white/70">Contabilidade e Assessoria Empresarial</p>
