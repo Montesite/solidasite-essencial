@@ -31,7 +31,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/5aa1d763-fa32-43b0-a697-b2377df3cd1e.png" 
               alt="Grupo Sólida Logo" 
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
             <div>
               <h1 className="text-xl font-bold text-primary">Grupo Sólida</h1>
