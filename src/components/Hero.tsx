@@ -28,7 +28,7 @@ const Hero = () => {
           {/* Content - Centralizado */}
           <div className="text-white text-center max-w-4xl">
             <div className="mb-8">
-              <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 pt-4 text-sm font-medium mb-6">
+              <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 pt-4 text-sm font-medium mb-6 mt-8 sm:mt-0">
                 <Shield className="h-4 w-4 mr-2" />
                 Especialistas em Contabilidade
               </div>
