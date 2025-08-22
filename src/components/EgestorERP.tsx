@@ -3,7 +3,7 @@ import React from 'react';
 
 const EgestorERP = () => {
   // Link for both the title and button
-  const egestorLink = "link do parceiro";
+  const egestorLink = "https://www.egestor.com.br/afl/1375";
 
   return (
     <section className="py-16 bg-white overflow-hidden">
