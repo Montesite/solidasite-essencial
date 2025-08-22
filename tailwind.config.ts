@@ -120,6 +120,7 @@ export default {
 				'fade-in-up': 'fade-in-up 0.8s ease-out',
 				'float': 'float 3s ease-in-out infinite',
 				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+				'pulse-slow': 'pulse 4s ease-in-out infinite',
 			},
 			backgroundImage: {
 				'gradient-primary': 'linear-gradient(135deg, hsl(215 85% 35%) 0%, hsl(215 75% 45%) 100%)',
