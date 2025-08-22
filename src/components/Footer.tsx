@@ -1,20 +1,13 @@
-
 import React from 'react';
 import { Phone, Mail, Instagram, MapPin } from 'lucide-react';
-
 const Footer = () => {
-  return (
-    <footer className="bg-foreground text-white">
+  return <footer className="bg-foreground text-white">
       <div className="max-w-7xl mx-auto py-16 px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <img 
-                src="/lovable-uploads/5aa1d763-fa32-43b0-a697-b2377df3cd1e.png" 
-                alt="Grupo Sólida Logo" 
-                className="h-12 w-auto"
-              />
+              <img src="/lovable-uploads/5aa1d763-fa32-43b0-a697-b2377df3cd1e.png" alt="Grupo Sólida Logo" className="h-12 w-auto" />
               <div>
                 <h3 className="text-xl font-bold">Grupo Sólida</h3>
                 <p className="text-white/70">Contabilidade e Assessoria Empresarial</p>
@@ -25,22 +18,10 @@ const Footer = () => {
               completas para que sua empresa cresça de forma segura e organizada.
             </p>
             <div className="flex space-x-4">
-              <a 
-                href="https://instagram.com/Solidagrupo" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-white/10 hover:bg-white/20 p-3 rounded-xl transition-colors"
-                aria-label="Seguir no Instagram"
-              >
+              <a href="https://instagram.com/Solidagrupo" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 p-3 rounded-xl transition-colors" aria-label="Seguir no Instagram">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a 
-                href="https://wa.me/556120172777" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-white/10 hover:bg-white/20 p-3 rounded-xl transition-colors"
-                aria-label="Falar no WhatsApp"
-              >
+              <a href="https://wa.me/556120172777" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 p-3 rounded-xl transition-colors" aria-label="Falar no WhatsApp">
                 <Phone className="h-5 w-5" />
               </a>
             </div>
@@ -92,21 +73,13 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-secondary" />
-                <a 
-                  href="tel:+556120172777" 
-                  className="hover:text-white transition-colors"
-                  aria-label="Ligar para Grupo Sólida"
-                >
+                <a href="tel:+556120172777" className="hover:text-white transition-colors" aria-label="Ligar para Grupo Sólida">
                   (61) 2017-2777
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-secondary" />
-                <a 
-                  href="mailto:gruposolidafinanceiro@gmail.com" 
-                  className="hover:text-white transition-colors"
-                  aria-label="Enviar e-mail para Grupo Sólida"
-                >
+                <a href="mailto:gruposolidafinanceiro@gmail.com" className="hover:text-white transition-colors" aria-label="Enviar e-mail para Grupo Sólida">
                   gruposolidafinanceiro@gmail.com
                 </a>
               </div>
@@ -123,14 +96,12 @@ const Footer = () => {
               © 2024 Grupo Sólida Contabilidade e Assessoria Empresarial. Todos os direitos reservados.
             </p>
             <div className="flex space-x-6 text-sm text-white/60 mt-4 md:mt-0">
-              <a href="#" className="hover:text-white transition-colors">Política de Privacidade</a>
+              
               <a href="#" className="hover:text-white transition-colors">Termos de Uso</a>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
